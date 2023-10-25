@@ -1,4 +1,4 @@
-package com.example.springdemo;
+package com.example.springdemo.biz;
 
 import jakarta.annotation.Resource;
 import org.springframework.stereotype.Component;
@@ -13,8 +13,4 @@ public class UserLogic {
         userService.getUsernameById(1);  // 第二次查询
     }
 
-//    public static void main(String[] args) {
-//        UserLogic userLogic = new UserLogic();
-//        userLogic.testAop();
-//    }
 }

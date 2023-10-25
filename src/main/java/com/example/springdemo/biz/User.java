@@ -1,4 +1,4 @@
-package com.example.springdemo;
+package com.example.springdemo.biz;
 
 public class User {
     private int id;

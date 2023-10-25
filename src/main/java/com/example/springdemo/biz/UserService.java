@@ -1,4 +1,5 @@
-package com.example.springdemo;
+package com.example.springdemo.biz;
+
 
 import com.example.springdemo.aop.Cache;
 import org.springframework.stereotype.Service;

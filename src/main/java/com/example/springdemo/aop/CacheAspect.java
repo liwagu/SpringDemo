@@ -1,5 +1,6 @@
-package com.example.springdemo;
+package com.example.springdemo.aop;
 
+import com.example.springdemo.biz.User;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
@@ -12,9 +13,9 @@ import java.util.Map;
 @Aspect
 @Component
 public class CacheAspect {
-    private Map<Integer,User> cache = new HashMap<>();
+    private Map<Integer, User> cache = new HashMap<>();
 
-    @Pointcut("@annotation(Cache)")
+    @Pointcut("@annotation(com.example.springdemo.aop.Cache)")
     public void cachePointcut() {}
 
     @Around("cachePointcut()")
